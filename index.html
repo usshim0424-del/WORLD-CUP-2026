@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORLD CUP 2026 SCORE BETTING</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>🏆 WORLD CUP 2026 SCORE BETTING</h1>
+
+  <div id="loginBox">
+    <input type="text" id="nickname" placeholder="닉네임 입력">
+    <button onclick="login()">입장</button>
+  </div>
+
+  <div id="mainApp" style="display:none;">
+
+    <h2 id="welcomeText"></h2>
+
+    <div id="matches"></div>
+
+    <button class="submitBtn" onclick="submitPredictions()">
+      제출하기
+    </button>
+
+    <hr>
+
+    <h2>🏅 현재 순위</h2>
+    <div id="ranking"></div>
+
+  </div>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
