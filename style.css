@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#loginBox {
+  text-align: center;
+  margin-top: 30px;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.match {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.scoreInput {
+  width: 50px;
+  text-align: center;
+}
+
+.submitBtn {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+#ranking {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
