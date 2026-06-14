@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>관리자 페이지</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>관리자 페이지</h1>
+
+  <div id="loginArea">
+
+    <input
+      type="password"
+      id="adminPassword"
+      placeholder="관리자 비밀번호">
+
+    <button onclick="adminLogin()">
+      로그인
+    </button>
+
+  </div>
+
+  <div id="adminArea" style="display:none;">
+
+    <h2>경기 추가</h2>
+
+    <input id="homeTeam" placeholder="홈팀">
+    <input id="awayTeam" placeholder="원정팀">
+
+    <button onclick="addMatch()">
+      경기 생성
+    </button>
+
+    <hr>
+
+    <h2>등록된 경기</h2>
+
+    <div id="matchList"></div>
+
+  </div>
+
+</div>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>
