@@ -114,11 +114,18 @@ async function loadRanking() {
 
   let html = "";
 
-  users.forEach((u, i) => {
-    html += `
-      <p>${i + 1}. ${u.nickname} - ${u.score}점</p>
-    `;
-  });
+  html += `
+  <div class="match">
+    <h3>${m.home} vs ${m.away} ${isLocked ? "🔒" : ""}</h3>
+    
+    <div class="score-container">
+      <input class="scoreInput" id="h_${docSnap.id}" type="number" min="0" ${isLocked ? "disabled" : ""}>
+      <span>:</span>
+      <input class="scoreInput" id="a_${docSnap.id}" type="number" min="0" ${isLocked ? "disabled" : ""}>
+    </div>
+  </div>
+`;
+
 
   rankingDiv.innerHTML = html;
 }
